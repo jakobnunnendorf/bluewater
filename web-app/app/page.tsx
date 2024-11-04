@@ -33,7 +33,7 @@ export default function Home() {
           🚧 Under Construction 🚧
         </h1>
         <p className="mb-8 text-xl text-gray-300">
-          We're working hard to bring you something amazing. Check back soon!
+          We&apos;re working hard to bring you something amazing. Check back soon!
         </p>
 
         {/* Contact Information */}

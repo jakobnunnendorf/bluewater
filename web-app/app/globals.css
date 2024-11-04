@@ -1,15 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.rborder{
-    border: 2px solid red;
+.rborder {
+  border: 2px solid red;
 }
-.gborder{
-    border: 2px solid green;
+.gborder {
+  border: 2px solid green;
 }
-.bborder{
-    border: 2px solid blue;
+.bborder {
+  border: 2px solid blue;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+}
+
+.animate-slide {
+  animation: slide 6s ease-in-out infinite;
 }

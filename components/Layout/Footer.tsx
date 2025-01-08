@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import SocialIcons from "./Hero/HeroText/Socials";
+import SocialIcons from "./SocialIcons";
 
 function Footer({ marginTop = "-mt-36 pt-[245px]" }: { marginTop?: string }) {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "@/components/Home/Portfolio/Card";
+import Card from "@/components/Home/Hero/Card";
 import Link from "next/link";
 
 function Grid() {

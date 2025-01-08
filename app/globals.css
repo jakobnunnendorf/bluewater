@@ -12,3 +12,29 @@
 .rborder {
   border: solid 1px red;
 }
+
+@keyframes bounce {
+  0%,
+  5%,
+  95%,
+  100% {
+    transform: translateY(0);
+    filter: brightness(100%);
+  }
+  1.5% {
+    transform: translateY(-12px);
+    filter: brightness(115%);
+  }
+  2.5% {
+    transform: translateY(-2px);
+    filter: brightness(105%);
+  }
+  3.5% {
+    transform: translateY(-8px);
+    filter: brightness(110%);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 6s ease-out infinite;
+}

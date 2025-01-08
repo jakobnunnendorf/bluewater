@@ -1,5 +1,6 @@
 import TextWithBg from "@/components/UI/TextWithBg";
 import Image from "next/image";
+import ZeroRisk from "./ZeroRisk";
 
 // TODO: create animation
 
@@ -8,7 +9,7 @@ function Hero() {
     <div className="flex flex-col gap-3.5 py-16">
       <article className="flex flex-col items-center">
         <div className="flex flex-col items-center gap-3.5">
-          <TextWithBg title="Boutique Web Design" />
+          {/* <TextWithBg title="Boutique Web Design" /> */}
           <div className="flex flex-col items-center gap-3">
             <h2 className="text-center font-gilroy-medium text-4xl font-normal leading-none text-black min-[477px]:text-5xl sm:text-[65px]">
               Bringing <span className="text-indigo-700">Yachting</span> <br />{" "}
@@ -20,6 +21,7 @@ function Hero() {
           </div>
         </div>
       </article>
+      <ZeroRisk />
       <Image
         src="/images/hero-bg.png"
         className="h-fit w-full"

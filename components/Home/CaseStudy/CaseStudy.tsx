@@ -1,6 +1,8 @@
 import CaseStudyVideo from "@/components/Home/CaseStudy/CaseStudyVideo";
 import HeadingTextLg from "../../UI/HeadingTextLg";
 
+// TODO: insert real case study
+
 function CaseStudy() {
   return (
     <section className="mt-24 bg-gray-light-2 py-12 lg:mb-52 lg:h-[665px] lg:pt-9">

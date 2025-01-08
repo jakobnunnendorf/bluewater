@@ -2,6 +2,8 @@
 import Button from "../../UI/Button";
 import Input from "../../UI/Input";
 
+// TODO: connect emailjs
+
 const RightSection = ({ formTitle }: { formTitle?: string }) => {
   return (
     <div className="w-full lg:pr-[60px]">

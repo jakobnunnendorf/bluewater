@@ -3,6 +3,8 @@ import Link from "next/link";
 
 const dir = "/images/social/";
 
+// TODO: add real socials
+
 const socialLinks = [
   {
     src: "fb.svg",

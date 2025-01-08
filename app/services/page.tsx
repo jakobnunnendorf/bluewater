@@ -1,4 +1,5 @@
 import HesitateCard from "@/components/Home/HesitateCard/HesitateCard";
+import ContactUsSection from "@/components/Layout/ContactUs/ContactUsSection";
 import AchieveSection from "@/components/Services/AchieveSection";
 import CoreServicesSection from "@/components/Services/CoreServicesSection";
 import CustomerStorySection from "@/components/Services/CustomerStorySection";
@@ -18,6 +19,7 @@ const page = (props: Props) => {
       <AchieveSection />
       <CustomerStorySection />
       <HesitateCard />
+      <ContactUsSection />
     </main>
   );
 };

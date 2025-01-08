@@ -13,17 +13,14 @@ const LeftSection = ({ formTitle }: { formTitle?: string }) => {
 
         {formTitle ? (
           <div className="mt-10 flex flex-col gap-6">
-            <LeadingIconWithText
-              icon="phone-icon.svg"
-              text="+1 (555) 123-4567"
-            />
+            <LeadingIconWithText icon="phone-icon.svg" text="+65 842 505 80" />
             <LeadingIconWithText
               icon="email-icon.svg"
-              text="info@yachtdesign.com"
+              text="jakob@bluewater-studios.de"
             />
             <LeadingIconWithText
               icon="location-icon.svg"
-              text="123 Ocean Drive, Suite 456, Miami, FL 33139"
+              text="Pflasterhofweg 74, Cologne Germany"
             />
           </div>
         ) : (

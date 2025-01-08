@@ -1,5 +1,8 @@
 import TextWithBg from "@/components/UI/TextWithBg";
 import Image from "next/image";
+
+// TODO: create animation
+
 function Hero() {
   return (
     <div className="flex flex-col gap-3.5 py-16">

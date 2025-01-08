@@ -25,9 +25,9 @@ function ExpertiseSection() {
               digital experiences that resonate with the luxury and
               sophistication of the yacht interior design industry. Our
               expertise is rooted in a deep understanding of both the aesthetic
-              and functional requirements of high-end yacht interiors, allowing
-              us to create websites that are as elegant and bespoke as the
-              spaces they represent.{" "}
+              and functional requirements of high-end yacht design, allowing us
+              to create websites that are as elegant and bespoke as the spaces
+              they represent.{" "}
             </p>
           </header>
         </div>

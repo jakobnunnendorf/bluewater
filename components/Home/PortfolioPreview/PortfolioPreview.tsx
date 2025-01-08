@@ -5,6 +5,8 @@ import ClientSectionCard from "./ClientSectionCard";
 
 type Props = {};
 
+// TODO: add real portfolio projects
+
 const PortfolioPreview = (props: Props) => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const [cardWidth, setCardWidth] = useState(763);

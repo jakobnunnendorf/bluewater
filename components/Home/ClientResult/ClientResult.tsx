@@ -2,6 +2,8 @@ import Image from "next/image";
 import HeadingTextLg from "../../UI/HeadingTextLg";
 import ClientResultCard from "./ClientResultCard";
 
+// TODO: insert real results
+
 function ClientResult() {
   return (
     <>

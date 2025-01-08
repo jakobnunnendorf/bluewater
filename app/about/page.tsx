@@ -7,6 +7,7 @@ import { ExceptionalResultData } from "@/components/About/ExceptionalResultData"
 import ExpertiseSection from "@/components/About/ExpertiseSection";
 import StatementContainer from "@/components/About/StatementContainer";
 import WhatOurClientSay from "@/components/About/WhatOurClientSay";
+import ContactUsSection from "@/components/Layout/ContactUs/ContactUsSection";
 import SeconderyHeroWithNav from "@/components/Shared/SeconderyHeroWithNav";
 
 type Props = {};
@@ -17,8 +18,9 @@ const page = (props: Props) => {
       <SeconderyHeroWithNav
         bgImgSrc="/images/about-us/about-hero.png"
         title="ABOUT US"
-        desc="At BlueWater Interiors, we believe that yacht interior design represents the pinnacle of luxury—where dreams, born long ago, of freedom, excellence, and feeling at home across the seven seas finally converge. We see your online presence as a testament to elegance, beauty, and, most importantly, a canvas where your customer’s vision springs to life. It is a natural extension of your design philosophy"
+        desc="At BlueWater Interiors, we believe that yacht interior design represents the pinnacle of luxury—where dreams, born long ago, of freedom, excellence, and feeling at home across the seven seas finally converge. We see your online presence as a testament to elegance, beauty, and, most importantly, a canvas where your customer's vision springs to life."
       />
+      {/* TODO rewrite copy */}
       <StatementContainer
         imgSrc="/images/get-covered/get-covered.png"
         title="Mission StatemenT"
@@ -31,8 +33,8 @@ const page = (props: Props) => {
         flexDir="items-end lg:flex-row-reverse"
         title="Founder Story"
         desc={[
-          "From a young age, I was captivated by the elegance and innovation in design, whether in architecture, art, or technology. My passion for the sea was ignited during a family vacation aboard a luxury yacht, where the seamless blend of form and function in the interior design left a lasting impression. This experience, combined with my liberal arts degree in Physics and Computer Science, led me to a career in web design, where I merged my love for technology and art.",
-          "After years of working with diverse clients, a collaboration with a yacht interior designer revealed a profound need for specialized digital solutions in this niche. This realization inspired me to focus exclusively on translating the luxury and sophistication of yacht interiors into digital experiences. Driven by this vision, I founded BlueWater Interiors, with the mission to ensure yacht designers' philosophies are reflected in every pixel, bridging the gap between exquisite design and digital innovation.",
+          "My passion for the sea was ignited during a family vacation aboard a sailing yacht when I was 13 years old. The craftsmanship and the feeling of 'home' at sea left a lasting impression that inspired me to employ my experience in design and technology to work on something I love. Throughout my liberal arts and STEM education in the humanities, physics and computer science I was fascinated by the intersection between logic, story telling and art.",
+          "In 2020 I learned web development and got my first fiew clients by walking into their store and pitching my services. After years of working with diverse clients, a collaboration with a yacht designer revealed the passion of doing web design for yachts. This realization inspired me to focus exclusively on translating the luxury and sophistication of yacht design into digital experiences. Driven by this vision, I founded BlueWater Interiors, with the mission to ensure yacht designers' philosophies are reflected in every pixel, bridging the gap between exquisite design and digital innovation.",
         ]}
       />
       <ExpertiseSection />
@@ -66,6 +68,7 @@ const page = (props: Props) => {
         img="/images/about-us/client-centric.png"
       />
       <WhatOurClientSay />
+      <ContactUsSection />
     </main>
   );
 };

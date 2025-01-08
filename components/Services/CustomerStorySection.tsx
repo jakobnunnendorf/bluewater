@@ -2,7 +2,7 @@ import HeadingTextLg from "../UI/HeadingTextLg";
 import CustomerStoryCarousel from "./CustomerStoryCarousel";
 
 type Props = {};
-
+// TODO insert real text
 const CustomerStorySection: React.FC<Props> = ({}) => {
   return (
     <section className="mt-[123px]">

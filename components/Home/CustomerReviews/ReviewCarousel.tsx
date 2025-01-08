@@ -9,6 +9,8 @@ interface Slider {
   des: string;
 }
 
+// TODO: insert real testimonials
+
 const ReviewCarousel: React.FC = () => {
   const [currentSlider, setCurrentSlider] = useState<number>(0);
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);

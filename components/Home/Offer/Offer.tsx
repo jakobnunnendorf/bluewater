@@ -3,6 +3,8 @@ import OfferCard from "./OfferCard";
 
 type Props = {};
 
+// TODO: change offer
+
 const Offer: React.FC<Props> = ({}) => {
   return (
     <section className="container mt-[123px]">

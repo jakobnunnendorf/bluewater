@@ -6,6 +6,8 @@ import HeadingTextLg from "../../UI/HeadingTextLg";
 
 type Props = {};
 
+// TODO: animate mac
+
 const ProcessSection = (props: Props) => {
   return (
     <div className="flex flex-col items-center">

@@ -57,6 +57,8 @@ export const CarouselContainer = ({
     return () => clearInterval(intervalId);
   }, [nextSlider, prevSlider]);
 
+  /* TODO make infinite scroll */
+
   return (
     <section className="mt-20 sm:mt-28 md:mt-40 lg:mt-[230px]">
       <header className="mx-auto mb-6 flex w-full max-w-[79%] flex-col gap-2.5">

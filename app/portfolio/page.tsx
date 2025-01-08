@@ -1,11 +1,12 @@
 import HesitateCard from "@/components/Home/HesitateCard/HesitateCard";
+import ContactUsSection from "@/components/Layout/ContactUs/ContactUsSection";
 import { InteriorInnovationsData } from "@/components/Portfolio/InteriorInnovationsData";
 import { LuxuryYachtsData } from "@/components/Portfolio/LuxuryYachtsData";
 import PortfolioSection from "@/components/Portfolio/PortfolioSection";
 import SeconderyHeroWithNav from "@/components/Shared/SeconderyHeroWithNav";
 
 type Props = {};
-
+// TODO insert real portfolio projects
 const page = (props: Props) => {
   return (
     <main>
@@ -26,6 +27,7 @@ const page = (props: Props) => {
         data={InteriorInnovationsData}
       />
       <HesitateCard />
+      <ContactUsSection />
     </main>
   );
 };

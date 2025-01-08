@@ -4,6 +4,8 @@ import CustomerStoryCard from "./CustomerStoryCard";
 
 type Props = {};
 
+// TODO insert real videos and testimonials
+
 const CustomerStoryCarousel = (props: Props) => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);

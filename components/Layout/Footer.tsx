@@ -18,7 +18,8 @@ function Footer({ marginTop = "-mt-36 pt-[245px]" }: { marginTop?: string }) {
             />
           </Link>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Dui id molestie at vel.
+            Lorem ipsum dolor sit amet consectetur. Dui id molestie at vel.{" "}
+            {/* TODO replace with real text */}
             Massa sagittis semper at augue at leo nullam tellus Adipiscing.
           </p>
         </div>
@@ -72,7 +73,7 @@ function Footer({ marginTop = "-mt-36 pt-[245px]" }: { marginTop?: string }) {
                     fill="#F17121"
                   />
                 </svg>
-                jnunnendorf@icloud.com
+                jakob@bluewater-studios.de
               </Link>
             </li>
             <li>

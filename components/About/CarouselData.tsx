@@ -4,6 +4,7 @@ interface CarouselDataInterface {
   desc: string;
 }
 
+// TODO review section
 export const CarouselData: CarouselDataInterface[] = [
   {
     icon: "/images/expertise/expertise-icon-1.png",

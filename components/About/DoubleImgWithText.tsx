@@ -29,7 +29,7 @@ const DoubleImgWithText: React.FC<Props> = ({
         className={`flex items-center gap-5 ${flexDir ? flexDir : "max-lg:flex-col-reverse"}`}
       >
         <article className="lg:w-1/2">
-          <HeadingTextLg title="Client-Centric Approach" />
+          <HeadingTextLg title={title} />
           <p className="mt-3 font-gilroy-regular text-sm text-[#656565] md:text-lg">
             {info}
           </p>

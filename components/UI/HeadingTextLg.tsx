@@ -6,7 +6,7 @@ type Props = {
 
 const HeadingTextLg: React.FC<Props> = ({ title }) => {
   return (
-    <h2 className="font-gilroy-medium text-3xl font-normal uppercase leading-none min-[477px]:text-5xl sm:text-[56px]">
+    <h2 className="font-gilroy-medium text-3xl font-normal capitalize leading-none min-[477px]:text-5xl sm:text-[56px]">
       {title}
     </h2>
   );

@@ -68,9 +68,7 @@ function MileStones() {
 function TextWindow() {
   return (
     <div className="flex flex-col items-center justify-center px-8 py-4 md:py-0">
-      <h3 className="py-6 pt-10 text-xl font-bold">
-        What we would like to achieve with you & your website:
-      </h3>
+      <h3 className="py-6 pt-10 text-xl font-bold capitalize">How it works</h3>
       <div className="grid h-full w-full grid-cols-3">
         <TimeLine />
         <MileStones />

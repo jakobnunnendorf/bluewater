@@ -38,7 +38,7 @@ export default function ZeroRisk() {
         />
         <div className="w-full text-center text-xl text-slate-50">
           <p className="font-bold">
-            <span className="underline underline-offset-2">Zero Risk</span>
+            <span className="underline underline-offset-2">Zero-Risk</span>
             &nbsp;Guarantee
           </p>
           <p className="text-xs">Only pay if you like the result</p>

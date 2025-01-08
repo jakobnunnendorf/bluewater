@@ -41,7 +41,7 @@ export default function ZeroRisk() {
             <span className="underline underline-offset-2">Zero-Risk</span>
             &nbsp;Guarantee
           </p>
-          <p className="text-xs">Only pay if you like the result</p>
+          <p className="text-xs">Only pay if you like the design</p>
         </div>
         {/* <ClaimNow /> */}
         <Laurel

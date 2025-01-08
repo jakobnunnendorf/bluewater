@@ -32,44 +32,30 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
           </div>
         </header>
         <section className="flex flex-col gap-5">
-          <p className="flex gap-0.5 font-gilroy-regular text-base font-normal">
-            <svg
-              className="mt-1.5 max-h-2 min-w-2 fill-gray-mid-2/50 group-hover:fill-terquoise-blue"
-              width="5"
-              height="5"
-              viewBox="0 0 5 5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          {points.map((point, index) => (
+            <p
+              key={index}
+              className="flex gap-0.5 font-gilroy-regular text-base font-normal"
             >
-              <circle
-                cx="2.27002"
-                cy="2.62183"
-                r="2.09814"
-                // fill="#636363"
-                // fillOpacity="0.5"
-              />
-            </svg>
-            Fully understand & capture your design philosophy
-          </p>
-          <p className="flex gap-0.5 font-gilroy-regular text-base font-normal">
-            <svg
-              className="mt-1.5 max-h-2 min-w-2 fill-gray-mid-2/50 group-hover:fill-terquoise-blue"
-              width="5"
-              height="5"
-              viewBox="0 0 5 5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="2.27002"
-                cy="2.62183"
-                r="2.09814"
-                // fill="#636363"
-                // fillOpacity="0.5"
-              />
-            </svg>
-            Measure traffic
-          </p>
+              <svg
+                className="mt-1.5 max-h-2 min-w-2 fill-gray-mid-2/50 group-hover:fill-terquoise-blue"
+                width="5"
+                height="5"
+                viewBox="0 0 5 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="2.27002"
+                  cy="2.62183"
+                  r="2.09814"
+                  // fill="#636363"
+                  // fillOpacity="0.5"
+                />
+              </svg>
+              {point}
+            </p>
+          ))}
         </section>
       </article>
       <div className="absolute right-20 z-10 flex w-[158px] items-center">

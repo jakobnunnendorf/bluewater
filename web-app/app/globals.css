@@ -9,3 +9,6 @@
     color: #f17121;
   }
 }
+.rborder {
+  border: solid 1px red;
+}

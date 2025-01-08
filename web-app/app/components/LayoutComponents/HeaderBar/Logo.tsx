@@ -9,9 +9,7 @@ const Logo: React.FC<Props> = ({ isBg = true }) => {
     <Link href="/#hero-section">
       <Image
         src={
-          isBg
-            ? "/images/blue-water-interiors.png"
-            : "/images/blue-water-interiors-white.png"
+          isBg ? "/BlueWater Studios Logo.png" : "/BlueWater Studios Logo.png"
         }
         width={85}
         height={45}

@@ -25,7 +25,7 @@ const HeaderBar: React.FC<Props> = ({ isBg = true }) => {
           <Logo isBg={isBg} />
           <Navigation isBg={isBg} />
           <Button
-            bgColor={isBg ? "bg-black text-white" : "bg-white text-black"}
+            bgColor={isBg ? "bg-indigo-700 text-white" : "bg-white text-black"}
             name="Contact Us"
             onClick={() => {}}
           />

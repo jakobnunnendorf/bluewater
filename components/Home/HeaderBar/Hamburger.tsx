@@ -1,10 +1,10 @@
 "use client";
 
 function Hamburger({
-  isBg = true,
+  dark = false,
   toggleOpen,
 }: {
-  isBg: boolean;
+  dark: boolean;
   toggleOpen: () => void;
 }) {
   return (
@@ -14,7 +14,7 @@ function Hamburger({
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth="1.5"
-        className={`size-6 ${isBg ? "stroke-black" : "stroke-white"}`}
+        className={`size-6 ${dark ? "stroke-white" : "stroke-black"}`}
       >
         <path
           strokeLinecap="round"

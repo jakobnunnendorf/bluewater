@@ -8,27 +8,27 @@ import Drawer from "@/components/UI/Drawer";
 import Link from "next/link";
 
 type Props = {
-  isBg?: boolean;
+  dark?: boolean;
 };
 
-const HeaderBar: React.FC<Props> = ({ isBg = true }) => {
+const HeaderBar: React.FC<Props> = ({ dark = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
   return (
     <>
       <header
-        className={`${isBg ? "sticky top-0 z-50 bg-white shadow" : "bg-transparent"}`}
+        className={`${dark ? "bg-transparent" : "sticky top-0 z-50 bg-white shadow"}`}
       >
         <section
-          className={`flex items-center justify-between py-4 ${isBg ? "container w-full" : "w-full"}`}
+          className={`flex items-center justify-between py-4 ${dark ? "w-full" : "container w-full"}`}
         >
-          <Hamburger isBg={isBg} toggleOpen={toggleOpen} />
-          <Logo isBg={isBg} />
-          <Navigation isBg={isBg} />
+          <Hamburger dark={dark} toggleOpen={toggleOpen} />
+          <Logo dark={dark} />
+          <Navigation dark={dark} />
           <Link href="/contact">
             <Button
               bgColor={
-                isBg ? "bg-indigo-700 text-white" : "bg-white text-black"
+                dark ? "bg-white text-black" : "bg-indigo-700 text-white"
               }
               name="Contact Us"
             />
@@ -36,7 +36,7 @@ const HeaderBar: React.FC<Props> = ({ isBg = true }) => {
         </section>
       </header>
       <Drawer open={isOpen} setOpen={setIsOpen}>
-        <Navigation hiddenNavStyles="" />
+        <Navigation />
       </Drawer>
     </>
   );

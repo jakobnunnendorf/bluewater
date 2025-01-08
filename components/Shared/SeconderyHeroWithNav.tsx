@@ -20,7 +20,7 @@ const SeconderyHeroWithNav: React.FC<Props> = ({
         className="h-[515px] w-full rounded-[16px] bg-cover bg-no-repeat px-3 max-lg:bg-center sm:rounded-[20px] md:rounded-[30px] md:px-7 lg:rounded-[40px] lg:px-[73px]"
         style={{ backgroundImage: `url(${bgImgSrc})` }}
       >
-        <HeaderBar isBg={false} />
+        <HeaderBar dark />
         <div className="mx-auto flex h-[calc(100%-110px)] w-full max-w-[844px] flex-col items-center justify-center">
           {isShowTextBg && (
             <TextWithBg title="A Showcase of Mastery and Elegance" />

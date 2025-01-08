@@ -4,30 +4,37 @@ type Props = {
   id: number;
   title: string;
   points: string[];
+  isActive: boolean;
+  onHover: (hovering: boolean) => void;
 };
 
-const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
+const ProcessCard: React.FC<Props> = ({
+  id,
+  title,
+  points,
+  isActive,
+  onHover,
+}) => {
   return (
-    <div className="group relative flex h-[304px] w-full max-w-[283px] cursor-pointer items-center justify-between text-gray-mid-2/50">
+    <div
+      className={`group relative flex h-[304px] w-full max-w-[283px] cursor-pointer items-center justify-between ${
+        isActive ? "text-gray-mid-2" : "text-gray-mid-2/50"
+      }`}
+      onMouseEnter={() => onHover(true)}
+      onMouseLeave={() => onHover(false)}
+    >
       <article className="relative z-20 flex w-full max-w-[187px] flex-col gap-3.5">
         <header>
-          <h3 className="font-gilroy-medium text-2xl font-normal uppercase group-hover:text-terquoise-blue">
+          <h3
+            className={`font-gilroy-medium text-2xl font-normal uppercase ${
+              isActive ? "text-terquoise-blue" : "text-gray-mid-2/50"
+            }`}
+          >
             {title}
           </h3>
-          {/* use id number, make a array and map it */}
           <div className="flex items-center gap-3.5">
             {Array.from({ length: id }).map((_, index) => (
-              <svg
-                key={index}
-                width={13}
-                height={5}
-                className="fill-gray-mid-2/50 group-hover:fill-gray-mid-2"
-                viewBox="0 0 13 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11.3794 4.10603H1.64481C0.763334 4.10603 0.0351562 3.37785 0.0351562 2.49637C0.0351562 1.61489 0.763334 0.886719 1.64481 0.886719H11.3794C12.2609 0.886719 12.989 1.61489 12.989 2.49637C12.989 3.37785 12.2609 4.10603 11.3794 4.10603Z" />
-              </svg>
+              <div className="w-4 border" key={index}></div>
             ))}
           </div>
         </header>
@@ -38,7 +45,9 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
               className="flex gap-0.5 font-gilroy-regular text-base font-normal"
             >
               <svg
-                className="mt-1.5 max-h-2 min-w-2 fill-gray-mid-2/50 group-hover:fill-terquoise-blue"
+                className={`mt-1.5 max-h-2 min-w-2 ${
+                  isActive ? "fill-terquoise-blue" : "fill-gray-mid-2/50"
+                }`}
                 width="5"
                 height="5"
                 viewBox="0 0 5 5"
@@ -60,7 +69,13 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
       </article>
       <div className="absolute right-20 z-10 flex w-[158px] items-center">
         {id !== 4 && (
-          <div className="absolute -right-10 flex size-[88px] items-center justify-end rounded-3xl bg-gray-mid pr-6 font-gilroy-medium text-2xl text-white group-hover:bg-terquoise-blue">
+          <div
+            className={`absolute -right-10 flex size-[88px] items-center justify-end rounded-3xl pr-6 font-gilroy-medium text-2xl text-white ${
+              isActive
+                ? "bg-terquoise-blue"
+                : "bg-gray-mid group-hover:bg-terquoise-blue"
+            }`}
+          >
             {id}
           </div>
         )}

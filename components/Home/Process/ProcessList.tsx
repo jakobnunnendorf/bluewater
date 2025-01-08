@@ -7,34 +7,22 @@ interface ProcessSection {
 export const ProcessSectionList: ProcessSection[] = [
   {
     id: 1,
-    title: "Start",
-    points: [
-      "Fully understand & capture your design philosophy",
-      "Measure traffic",
-    ],
+    title: "The Vision",
+    points: ["Understand your design philosophy"],
   },
   {
     id: 2,
-    title: "1st Month",
-    points: [
-      "Deploy your website as a stunning extension of your portfolio",
-      "Boost SEO",
-    ],
+    title: "Design",
+    points: ["Turn your vision into a stunning design"],
   },
   {
     id: 3,
-    title: "2nd Month",
-    points: [
-      "Offer your clients free yacht branding websites",
-      "Monitor SEO results",
-    ],
+    title: "Development",
+    points: ["Bring your vision to life online"],
   },
   {
     id: 4,
-    title: "Finale",
-    points: [
-      "Launch marketing campaign with videos from the process",
-      "Review experience",
-    ],
+    title: "Launch",
+    points: ["Launch marketing campaign"],
   },
 ];

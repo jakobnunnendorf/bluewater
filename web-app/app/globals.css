@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.rborder{
-    border: 2px solid red;
+@layer components {
+  li::marker {
+    color: #f17121;
+  }
 }
-.gborder{
-    border: 2px solid green;
-}
-.bborder{
-    border: 2px solid blue;
+.rborder {
+  border: solid 1px red;
 }

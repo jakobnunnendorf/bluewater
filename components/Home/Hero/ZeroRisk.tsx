@@ -36,9 +36,11 @@ export default function ZeroRisk() {
           side="left"
           className="left-0 top-0 -translate-x-2 -translate-y-2"
         />
-        <div className="w-full text-center text-xl text-slate-50">
+        <div className="w-full text-center text-xl text-slate-50/80">
           <p className="font-bold">
-            <span className="underline underline-offset-2">Zero-Risk</span>
+            <span className="text-slate-50 underline underline-offset-2">
+              Zero-Risk
+            </span>
             &nbsp;Guarantee
           </p>
           <p className="text-xs">Only pay if you like the design</p>

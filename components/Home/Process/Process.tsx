@@ -31,13 +31,6 @@ const ProcessSection = () => {
 
   return (
     <div className="relative flex flex-col items-center">
-      <Image
-        className="max-lg:px-6"
-        src="/images/nautical-elegance.png"
-        alt="nautical elegance"
-        width={880}
-        height={740}
-      />
       <div
         className="container flex w-full flex-col items-center lg:gap-6"
         id="how-zero-risk-works"

@@ -1,6 +1,7 @@
 import TextWithBg from "@/components/UI/TextWithBg";
 import Image from "next/image";
 import ZeroRisk from "./ZeroRisk";
+import ThreeJS from "@/components/Experimental/ThreeJS";
 
 // TODO: create animation
 
@@ -22,13 +23,7 @@ function Hero() {
         </div>
       </article>
       <ZeroRisk />
-      <Image
-        src="/images/hero-bg.png"
-        className="h-fit w-full"
-        alt="portfolio"
-        width={1920}
-        height={1080}
-      />
+      <ThreeJS />
     </div>
   );
 }

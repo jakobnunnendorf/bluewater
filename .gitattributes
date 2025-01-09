@@ -3,3 +3,5 @@ public/images/other-page-hero.png filter=lfs diff=lfs merge=lfs -text
 public/portfolio/pf2.png filter=lfs diff=lfs merge=lfs -text
 public/portfolio/pf3.png filter=lfs diff=lfs merge=lfs -text
 public/portfolio/pf1.png filter=lfs diff=lfs merge=lfs -text
+public/hero/background-ship.png filter=lfs diff=lfs merge=lfs -text
+public/updates/boat-blueprint.png filter=lfs diff=lfs merge=lfs -text

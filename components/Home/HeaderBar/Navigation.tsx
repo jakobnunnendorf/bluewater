@@ -14,6 +14,7 @@ const Navigation: React.FC<Props> = ({
     { name: "About", link: "/about" },
     { name: "Services", link: "/services" },
     { name: "Portfolio", link: "/portfolio" },
+    { name: "Updates", link: "/updates" },
   ];
   return (
     <nav className={hiddenNavStyles}>
